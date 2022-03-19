@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/alambique/static/css/main.e6c13ad2.css",
-    "main.js": "/alambique/static/js/main.d4440188.js",
+    "main.js": "/alambique/static/js/main.29fdb755.js",
     "static/js/787.fd4fd16f.chunk.js": "/alambique/static/js/787.fd4fd16f.chunk.js",
     "index.html": "/alambique/index.html",
     "main.e6c13ad2.css.map": "/alambique/static/css/main.e6c13ad2.css.map",
-    "main.d4440188.js.map": "/alambique/static/js/main.d4440188.js.map",
+    "main.29fdb755.js.map": "/alambique/static/js/main.29fdb755.js.map",
     "787.fd4fd16f.chunk.js.map": "/alambique/static/js/787.fd4fd16f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d4440188.js"
+    "static/js/main.29fdb755.js"
   ]
 }
