@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/alambique/static/css/main.3eb9373f.css",
-    "main.js": "/alambique/static/js/main.becfb6a5.js",
+    "main.css": "/alambique/static/css/main.d82079b8.css",
+    "main.js": "/alambique/static/js/main.3fca39e0.js",
     "static/js/787.fd4fd16f.chunk.js": "/alambique/static/js/787.fd4fd16f.chunk.js",
+    "static/media/dt_home_hero_bg.png": "/alambique/static/media/dt_home_hero_bg.4cfa20cca2aa576445d8.png",
     "index.html": "/alambique/index.html",
-    "main.3eb9373f.css.map": "/alambique/static/css/main.3eb9373f.css.map",
-    "main.becfb6a5.js.map": "/alambique/static/js/main.becfb6a5.js.map",
+    "main.d82079b8.css.map": "/alambique/static/css/main.d82079b8.css.map",
+    "main.3fca39e0.js.map": "/alambique/static/js/main.3fca39e0.js.map",
     "787.fd4fd16f.chunk.js.map": "/alambique/static/js/787.fd4fd16f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eb9373f.css",
-    "static/js/main.becfb6a5.js"
+    "static/css/main.d82079b8.css",
+    "static/js/main.3fca39e0.js"
   ]
 }
