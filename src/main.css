@@ -285,7 +285,7 @@ body, html {
   line-height: 24px;
   letter-spacing: 0.38px;
   color: #292929;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .contact .contact-form > textarea {
@@ -295,4 +295,25 @@ body, html {
 .contact .contact-form > input::placeholder
 .contact .contact-form > textarea::placeholder {
   color: #ADADAD;
+}
+
+.contact .contact-form .checkbox {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #292929;
+}
+
+.contact .contact-form .checkbox a {
+  color: #EF27A6;
+  text-decoration: none;
+}
+
+.contact .contact-form .checkbox a:hover {
+  text-decoration: underline;
 }

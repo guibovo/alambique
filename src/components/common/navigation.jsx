@@ -6,7 +6,7 @@ const Navigation = () => {
   useEffect(() => {
     const location = window.location.pathname;
     let element = document.getElementById("headerNavigation");
-    if(location === '/' || location === '/alambique') {
+    if(location === '/' || location === '/alambique'  || location === '/alambique/') {
       window.onscroll = (e) => {  
         document.documentElement.scrollTop > 88
           ? element.classList.add("scroll-navigation")

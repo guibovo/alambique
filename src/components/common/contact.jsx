@@ -42,6 +42,14 @@ const Contact = props => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
+          
+          <label className="checkbox">
+            <input 
+              type="checkbox"
+              label="Some labe"
+            />
+            Acepto la <div>&nbsp;</div> <a href="#"> política de privacidad.</a>
+          </label>
       </form>
       
     </div>
