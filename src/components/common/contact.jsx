@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const Contact = props => {
-  const [name, setName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [phoneNumber, setPhoneNumber] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
   
   return(
     <div className="contact">
@@ -14,7 +14,7 @@ const Contact = props => {
         <div className="impact-text">{props.impactText}</div>
       </div>
       
-      <form className="contact-form">
+      <form className="contact-form" action="mailto:gui.bovo@hotmail.com">
           <input
             placeholder="Nombre"
             type="text" 

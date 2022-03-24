@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+   url("./fonts/Poppins.ttf") format("truetype");
+  }
 
-body, html {
+body, html, #root {
     font-family: 'Poppins', sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background: #F9F9F9;
+}
+
+.page-content {
+  min-height: calc(100vh - 256px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation-wrapper {
@@ -30,7 +42,7 @@ body, html {
   box-shadow: 0px 4px 11px rgba(41, 41, 41, 0.2);
 }
 
-.scroll-navigation > .navigation-logo {
+.scroll-navigation > .logo {
   background-image: url("./assets/black_logo.png");
 }
 
@@ -38,20 +50,20 @@ body, html {
   color: #292929 !important;
 }
 
-.navigation-logo {
+.logo {
   width: 150px;
   height: 50px;
   background-image: url("./assets/white_logo.png");
   background-repeat: no-repeat;
 }
 
-.navigation .links {
+.links {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
 
-.navigation .links > a {
+.links > a {
   font-family: 'Poppins';
   font-weight: 600;
   font-size: 15px;
@@ -61,8 +73,39 @@ body, html {
   border-bottom: 2px solid transparent;
 }
 
-.navigation .links > a:hover {
+.links > a:hover {
   border-bottom: 2px solid #EF27A6;
+}
+
+.footer {
+  height: 256px;
+  background-color: #292929;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #F9F9F9;
+  bottom: 0 !important;
+}
+
+ .footer .links {
+  width: 30%;
+ }
+
+.footer .footer-wrapper {
+  padding: 30px 105px 60px 105px;
+  height: 166px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .home-hero {
@@ -131,7 +174,7 @@ body, html {
 .home-content-card {
   margin-bottom: 80px;
   width: 45%;
-  min-height: 300px;
+  min-height: 320px;
 }
 
 .home-content-card > .title-wrapper {
@@ -172,8 +215,6 @@ body, html {
   display: flex;
   max-width: 1000px;
   margin: auto;
-  height: 100%;
-  padding-top: 90px;
 }
 
 .not-found .copy {
@@ -213,6 +254,10 @@ body, html {
   border: 2px solid #EF27A6;
   box-sizing: border-box;
   margin-top: 35px;
+}
+
+.not-found img {
+  width: 555px;
 }
 
 .contact {

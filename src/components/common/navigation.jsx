@@ -1,34 +1,39 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation();
   
   useEffect(() => {
-    const location = window.location.pathname;
+    const pathName= location.pathname;
+    const startsTransparent = (pathName === '/' || pathName === '/alambique'  || pathName === '/alambique/');
+
     let element = document.getElementById("headerNavigation");
-    if(location === '/' || location === '/alambique'  || location === '/alambique/') {
-      window.onscroll = (e) => {  
+    
+    startsTransparent 
+      ? element.classList.remove("scroll-navigation") : element.classList.add("scroll-navigation");
+    
+    window.onscroll = (e) => {
+      if (startsTransparent) {
         document.documentElement.scrollTop > 88
           ? element.classList.add("scroll-navigation")
           : element.classList.remove("scroll-navigation");
       }
-    } else {
-      element.classList.add("scroll-navigation")
     }
-  }, []);
+  }, [location]);
   
   return(
     <div className="navigation-wrapper">
       <nav id="headerNavigation" className="navigation">
-        <Link to="/alambique" className="navigation-logo">
+        <Link to="/alambique" className="logo">
         </Link>
         <div className="links">
-          <Link to="/invoices">Home</Link>
-          <Link to="/expenses">Branding</Link>
-          <Link to="/expenses">Social Media</Link>
-          <Link to="/expenses">Publicidad</Link>
-          <Link to="/expenses">Web/App</Link>
-          <Link to="/expenses">Contacto</Link>
+          <Link to="/alambique">Home</Link>
+          <Link to="/somelink">Branding</Link>
+          <Link to="/somelink">Social Media</Link>
+          <Link to="/somelink">Publicidad</Link>
+          <Link to="/somelink">Web/App</Link>
+          <Link to="/somelink">Contacto</Link>
         </div>
       </nav>
     </div>
