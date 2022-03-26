@@ -14,7 +14,7 @@ const Contact = props => {
         <div className="impact-text">{props.impactText}</div>
       </div>
       
-      <form className="contact-form" action="mailto:gui.bovo@hotmail.com">
+      <form className="contact-form">
           <input
             placeholder="Nombre"
             type="text" 

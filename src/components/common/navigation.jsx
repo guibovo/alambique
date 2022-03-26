@@ -29,11 +29,11 @@ const Navigation = () => {
         </Link>
         <div className="links">
           <Link to="/alambique">Home</Link>
-          <Link to="/somelink">Branding</Link>
-          <Link to="/somelink">Social Media</Link>
-          <Link to="/somelink">Publicidad</Link>
-          <Link to="/somelink">Web/App</Link>
-          <Link to="/somelink">Contacto</Link>
+          <Link to="/branding">Branding</Link>
+          <Link to="/social-media">Social Media</Link>
+          <Link to="/publicidad">Publicidad</Link>
+          <Link to="/web-app">Web/App</Link>
+          <Link to="/contacto">Contacto</Link>
         </div>
       </nav>
     </div>

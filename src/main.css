@@ -15,8 +15,15 @@ body, html, #root {
   min-height: calc(100vh - 256px);
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1000px;
+  margin: 80px auto 72px auto;
+}
+
+.page-content.small-content {
+  margin: auto;
 }
 
 .navigation-wrapper {
@@ -32,8 +39,7 @@ body, html, #root {
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 150px;
+  justify-content: space-around;
   letter-spacing: 0.38px;
 }
 
@@ -196,6 +202,10 @@ body, html, #root {
   margin-left: 20px;
 }
 
+.ml-56 {
+  margin-left: 56px;
+}
+
 .ml-45p {
   margin-left: 45%;
 }
@@ -211,18 +221,18 @@ body, html, #root {
   margin-top: 13px;
 }
 
-.not-found {
+.image-cta {
   display: flex;
   max-width: 1000px;
   margin: auto;
 }
 
-.not-found .copy {
+.image-cta .copy {
   display: flex;
   flex-direction: column;
 }
 
-.not-found .title {
+.image-cta .title {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -233,7 +243,7 @@ body, html, #root {
   padding-top: 50px;
 }
 
-.not-found .description {
+.image-cta .description {
   font-family: 'Poppins';
   font-style: italic;
   font-weight: 400;
@@ -244,7 +254,7 @@ body, html, #root {
   margin-top: 30px;
 }
 
-.not-found button {
+.image-cta button {
   width: 326px;
   height: 50px;
   left: 555.92px;
@@ -256,7 +266,7 @@ body, html, #root {
   margin-top: 35px;
 }
 
-.not-found img {
+.image-cta img {
   width: 555px;
 }
 
@@ -361,4 +371,43 @@ body, html, #root {
 
 .contact .contact-form .checkbox a:hover {
   text-decoration: underline;
+}
+
+.content-box {
+  padding: 23.5px 48px;
+  width: 100%;
+  border: 2px solid #EF27A6;
+  box-sizing: border-box;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #292929;
+  
+  margin-bottom: 80px;
+}
+
+.content-text {
+  margin-bottom: 80px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.content-text .title-wrapper {
+  border-bottom: 2px solid #EF27A6;
+  margin-bottom: 17px;
+}
+
+.content-text .title-wrapper .title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #292929;
+  padding: 0 0 13px 0;
 }

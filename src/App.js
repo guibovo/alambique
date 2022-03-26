@@ -6,7 +6,8 @@ import {
 import Navigation from "./components/common/navigation";
 import Footer from "./components/common/footer";
 import Home from "./pages/home";
-import NotFound from "./pages/NotFound";
+import SocialMedia from "./pages/socialMedia";
+import NotFound from "./pages/notFound";
 import './fonts/Poppins.ttf';
 import './main.css';
 
@@ -19,6 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/alambique" element={<Home />} />
+            <Route path="/social-media" element={<SocialMedia />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         <Footer />
