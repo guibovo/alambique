@@ -1,15 +1,15 @@
-import notFoundImage from "../assets/404.png";
+import socialMedia from "../assets/socialMedia.svg";
 import ContentBox from "../components/common/contentBox";
 import ImageCta from "../components/common/imageCta";
 import Contact from "../components/common/contact";
 import ContentText from "../components/common/contentText";
 
-const NotFound = props => {
+const SocialMedia = () => {
   return(
     <>
       <div className="page-content">
         <ImageCta 
-          image={notFoundImage}
+          image={socialMedia}
           title={[`Déjate de`, <br/>, `algoritmos.`]}
           description={[`Los truquitos funcionan,`, <br/>, `si tu contenido `, <b>engancha.</b>]}
           buttonText="Contacta con nosotros"
@@ -45,16 +45,13 @@ const NotFound = props => {
     
       <Contact 
         title={[`Quiero pertarlo`,<br/>, `en las redes.`]}
-        text={[`¿Crees que tu empresa necesita mejorar`,<br/>,
-          `su imagen? `,<br/>,
-          `¿Necesitas una identidad de marca para`,<br/>,
-          `tu proyecto?`,<br/>,
-          `¿Quieres distanciarte de tu competencia?`,<br/>,
-          `¿Necesitas publicidad?`]}
-        impactText="¡Podemos ayudarte!"
+        text={[`Es un largo camino por recorrer, pero`, <br/>,
+        `al final no tendrás clientes, tendrás`, <br/>,
+        `una `, <b>comunidad.</b>]}
+        impactText="¡Empecemos!"
       />
     </>
   );
 }
 
-export default NotFound;
+export default SocialMedia;

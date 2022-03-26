@@ -11,15 +11,19 @@ body, html, #root {
     background: #F9F9F9;
 }
 
+.pink {
+  color: #EF27A6;
+}
+
 .page-content {
-  min-height: calc(100vh - 256px);
+  min-height: calc(100vh - 246px);
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 1000px;
-  margin: 80px auto 72px auto;
+  margin: 100px auto 72px auto;
 }
 
 .page-content.small-content {
@@ -84,12 +88,11 @@ body, html, #root {
 }
 
 .footer {
-  height: 256px;
+  height: 246px;
   background-color: #292929;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.38px;
   color: #F9F9F9;
@@ -97,11 +100,12 @@ body, html, #root {
 }
 
  .footer .links {
+  font-size: 13px;
   width: 30%;
  }
 
 .footer .footer-wrapper {
-  padding: 30px 105px 60px 105px;
+  padding: 30px 105px 50px 105px;
   height: 166px;
   display: flex;
   flex-direction: column;
@@ -112,6 +116,10 @@ body, html, #root {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer .footer-content .links > a {
+  font-size: 13px;
 }
 
 .home-hero {
@@ -225,6 +233,9 @@ body, html, #root {
   display: flex;
   max-width: 1000px;
   margin: auto;
+  margin-bottom: 80px;
+  align-items: center;
+  min-height: 550px;
 }
 
 .image-cta .copy {
@@ -254,7 +265,7 @@ body, html, #root {
   margin-top: 30px;
 }
 
-.image-cta button {
+button {
   width: 326px;
   height: 50px;
   left: 555.92px;
@@ -266,8 +277,15 @@ body, html, #root {
   margin-top: 35px;
 }
 
+.image-cta .image-wrapper {
+  max-width: 45%;
+  margin-right: 50px;
+}
+
 .image-cta img {
-  width: 555px;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 
 .contact {

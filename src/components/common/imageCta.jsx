@@ -1,10 +1,7 @@
 const ImageCta = props => {
   return(
     <div className="image-cta">
-      <div>
-        <img src={props.image} alt="Page Not Found">
-        </img>
-      </div>
+      <img className="image-wrapper" src={props.image} alt={props.alt}></img>
       <div clasName="copy">
         <div className="title">{props.title}</div>
         <div className="description">{props.description}</div>
