@@ -137,6 +137,16 @@ body, html, #root {
   font-size: 13px;
 }
 
+button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #292929;
+}
+
 .home-hero {
   top: 0;
   height: 700px;
@@ -257,7 +267,7 @@ body, html, #root {
   min-height: 550px;
 }
 
-.image-cta .copy {
+#image-cta-copy {
   display: flex;
   flex-direction: column;
 }
@@ -459,11 +469,13 @@ button {
     line-height: 24px;
   }
   .home-hero .main-text,
-  .contact .contact-content .title {
+  .contact .contact-content .title,
+  .image-cta .title {
     font-size: 50px;
     line-height: 51px;
   }
-  .home-hero .sub-text {
+  .home-hero .sub-text,
+  .image-cta .description {
     font-size: 22px;
     line-height: 24px;
   }
@@ -487,7 +499,7 @@ button {
   .home-content-card {
     width: 100%;
   }
-  .home-content-card .title-wrapper .title,
+  .title-wrapper .title,
   .home-content-card .text {
     margin-left: 20px !important;
   }
@@ -500,5 +512,20 @@ button {
   }
   .home-content-card{
     margin-bottom: 71px;
+  }
+  
+  .image-cta {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 62px 25px 65px 25px;
+  }
+  .image-cta .image-wrapper {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+  }
+  
+  #image-cta-copy {
+    width: 100%;
+    margin: 0 25px;
   }
 }
