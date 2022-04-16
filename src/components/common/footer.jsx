@@ -12,9 +12,9 @@ const Footer = () => {
         
         <div className="footer-content">
           <div className="links">
-              <a href="#"> Legal </a>
-              <a href="#">Políticas de Privacidad</a>
-              <a href="#">Configuración de cookies</a>
+              <a className="white" href="#"> Legal </a>
+              <a className="white" href="#">Políticas de Privacidad</a>
+              <a className="white" href="#">Configuración de cookies</a>
           </div>
           
           <div className="rights">@{year} alambique</div>

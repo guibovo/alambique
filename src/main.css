@@ -11,8 +11,17 @@ body, html, #root {
     background: #F9F9F9;
 }
 
+.black-logo {
+  background-image: url("./assets/black_logo.png") !important;
+}
+
 .pink {
   color: #EF27A6;
+}
+
+.white,
+.white * {
+  color: #F9F9F9 !important;
 }
 
 .page-content {
@@ -55,6 +64,9 @@ body, html, #root {
 .scroll-navigation > .logo {
   background-image: url("./assets/black_logo.png");
 }
+.navigation .links > a {
+  color: #292929;
+}
 
 .scroll-navigation .links > a {
   color: #292929 !important;
@@ -78,9 +90,12 @@ body, html, #root {
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;
-  color: #F9F9F9;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+}
+
+.pink-underline {
+  border-bottom: 2px solid #EF27A6 !important;
 }
 
 .links > a:hover {
