@@ -229,6 +229,10 @@ body, html, #root {
   margin-left: 56px;
 }
 
+.mt-180 {
+  margin-top: 180px;
+}
+
 .ml-45p {
   margin-left: 45%;
 }
