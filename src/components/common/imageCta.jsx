@@ -1,6 +1,6 @@
 const ImageCta = props => {
   return(
-    <div className="image-cta">
+    <div className={`image-cta ${props.classes}`}>
       <img className="image-wrapper" src={props.image} alt={props.alt}></img>
       <div id="image-cta-copy" clasName="copy">
         <div className="title">{props.title}</div>

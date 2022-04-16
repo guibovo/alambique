@@ -1,4 +1,4 @@
-import socialMedia from "../assets/socialMedia.svg";
+import socialMedia from "../assets/socialMedia.png";
 import ContentBox from "../components/common/contentBox";
 import ImageCta from "../components/common/imageCta";
 import Contact from "../components/common/contact";

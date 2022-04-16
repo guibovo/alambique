@@ -230,7 +230,9 @@ button {
   color: #292929;
   margin-bottom: 12.5px;
 }
-
+.flex-d-important {
+  flex-direction: column !important;
+}
 .ml-20 {
   margin-left: 20px;
 }
@@ -506,6 +508,7 @@ button {
   .contact .contact-content .description,
   .contact .contact-content .title {
     margin-bottom: 44px;
+    hyphens: auto;
   }
   .contact .contact-form {
     width: 100%;
@@ -517,15 +520,14 @@ button {
   .image-cta {
     flex-direction: column-reverse;
     width: 100%;
-    margin: 62px 25px 65px 25px;
+    margin: 62px 0 65px 0;
   }
   .image-cta .image-wrapper {
     max-width: 100%;
     margin: 20px 0 0 0;
   }
-  
-  #image-cta-copy {
-    width: 100%;
-    margin: 0 25px;
+
+  .page-content.small-content {
+    margin: 38px 38px auto 38px;
   }
 }
