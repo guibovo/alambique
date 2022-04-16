@@ -447,3 +447,58 @@ button {
   color: #292929;
   padding: 0 0 13px 0;
 }
+
+@media only screen and (max-width: 480px) {
+  .page-content, .home-content-wrapper, .contact {
+    margin: auto 38px;
+  }
+  
+  .home-content-card > .text,
+  .contact .contact-content .description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .home-hero .main-text,
+  .contact .contact-content .title {
+    font-size: 50px;
+    line-height: 51px;
+  }
+  .home-hero .sub-text {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  
+  .home-hero {
+    background-image: url("./assets/mb_home_hero_bg.png");
+  }
+  .home-hero button {
+    width: 100%; 
+  }
+  .home-hero > div {
+    margin: 0 25px;
+    width: 80%;
+  }
+  .home-content {
+    margin-bottom: 100px;
+  }
+  .home-content, .contact {
+    flex-direction: column;
+  }
+  .home-content-card {
+    width: 100%;
+  }
+  .home-content-card .title-wrapper .title,
+  .home-content-card .text {
+    margin-left: 20px !important;
+  }
+  .contact .contact-content .description,
+  .contact .contact-content .title {
+    margin-bottom: 44px;
+  }
+  .contact .contact-form {
+    width: 100%;
+  }
+  .home-content-card{
+    margin-bottom: 71px;
+  }
+}
