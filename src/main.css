@@ -530,4 +530,22 @@ button {
   .page-content.small-content {
     margin: 38px 38px auto 38px;
   }
+  
+  .footer {
+    height: 340px;
+  }
+  .footer .footer-wrapper {
+    padding: 0 25px;
+  }
+  .footer .footer-content,
+  .footer-wrapper,
+  .footer-content,
+  .footer .links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .footer-content div {
+    margin: 20px 0;
+  }
 }
