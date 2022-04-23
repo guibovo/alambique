@@ -16,24 +16,32 @@ const Navigation = () => {
     let element = document.getElementById("headerNavigation");
     let logoElement = document.getElementById("headerLogo");
     let burgerMenu = document.getElementById("burger-menu");
+    let navigationLins = document.getElementById("navigation-links");
+    
+    /* RESET BURGER MENU */
+    burgerMenu.classList.remove("open");
+    navigationLins.classList.remove("open");
+    setIsOpen(false);
+    /* RESET BURGER MENU */
+    window.scrollTo(0, 0);
     
     if (ishomeScreen) {
       element.classList.add("white");
       logoElement.classList.remove("black-logo");
-      burgerMenu.classList.remove("black-burger");
     } else {
       element.classList.remove("white");
       logoElement.classList.add("black-logo");
-      burgerMenu.classList.add("black-burger");
     }
     
     window.onscroll = (e) => {
       if (document.documentElement.scrollTop > 88) {
-        element.classList.add("scroll-navigation")
+        element.classList.add("scroll-navigation");
       } else {
           element.classList.remove("scroll-navigation");
+          burgerMenu.classList.add("black-burger");
           if(ishomeScreen) {
             element.classList.add("white");
+            burgerMenu.classList.remove("black-burger");
           }
       }
     }
@@ -45,19 +53,21 @@ const Navigation = () => {
     }
     return '';
   }
+  
+  const isHomeScreen = path => (path === '/' || path === '/alambique'  || path === '/alambique/');
 
   return(
     <div className="navigation-wrapper">
       <nav id="headerNavigation" className="navigation">
         <Link id="headerLogo" to="/alambique" className="logo">
         </Link>
-        <div id="burger-menu" className={isOpen ? "open" : ""} onClick={() => handleToggleMenu()}>
+        <div id="burger-menu" className={`${isOpen ? "open" : ""} ${isHomeScreen(location.pathname) ? '' : 'black-burger'}`} onClick={() => handleToggleMenu()}>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div className={`links ${isOpen ? "open" : ""}`}>
+        <div id="navigation-links" className={`links ${isOpen ? "open" : ""}`}>
           <Link className={underlineCurrentPage('/alambique')} to="/alambique">Home</Link>
           <Link className={underlineCurrentPage('/branding')} to="/branding">Branding</Link>
           <Link className={underlineCurrentPage('/social-media')} to="/social-media">Social Media</Link>
