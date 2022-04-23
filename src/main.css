@@ -489,10 +489,12 @@ button {
     right: -100vw;
     bottom: 0;
     padding-top: 126px;
+    display:none;
   }
   .navigation > .links.open {
     left: 0;
     overflow: hidden;
+    display: flex;
   }
   
   .navigation > .links > a {
@@ -607,7 +609,6 @@ button {
     cursor: pointer;
     z-index: 9999;
   }
-
   #burger-menu span {
     z-index: 9999;
     display: block;
@@ -631,7 +632,7 @@ button {
     background: #292929;
   }
   .scroll-navigation #burger-menu span,
-  .logo.black-logo + #burger-menu span {
+  #burger-menu.black-burger span {
     background-color: #292929;
   }
 

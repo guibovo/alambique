@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="logo"></div>
           
-          <div>HERE GOES SOCIAL MEDIA ICONS AND LINKS</div>
+          <div>HERE GOES SOCIAL MEDIAS</div>
         </div>
         
         <div className="footer-content">
