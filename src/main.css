@@ -13,12 +13,75 @@ body, html, #root {
     overflow-x: hidden;
 }
 
+.formMessage {
+  font-size: 15px;
+  letter-spacing: 0.38px;
+  line-height: 24px;
+  font-family: "Poppins";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 12px 0 0 0;
+}
+
+.box {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 12px 0 0;
+}
+
+.formMessage.successMsg > .box {
+  border: 2px solid #17BE82;
+}
+.formMessage.successMsg .box .box-symbol {
+  display: inline-block;
+  transform: rotate(40deg);
+  height: 10px;
+  width: 5px;
+  margin: 0 0 5px 4px;
+  border-bottom: 2px solid #17BE82;
+  border-right: 2px solid #17BE82;
+}
+
+.formMessage.errorMsg > .box {
+  border: 2px solid red;
+}
+.formMessage.errorMsg .box .box-symbol::before,
+.formMessage.errorMsg .box .box-symbol::after {
+  display: inline-block;
+  position: absolute;
+  height: 13px;
+  width: 15px;
+  content: " ";
+}
+.formMessage.errorMsg .box .box-symbol::before {
+  transform: rotate(-45deg) translate(0, 6.5px);
+  border-top: 2px solid red;
+}
+.formMessage.errorMsg .box .box-symbol::after {
+  transform: rotate(45deg) translate(0, 6.5px);
+  border-top: 2px solid red;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.successMsg {
+  color: #17BE82;
+}
+
+.full-width {
+  width: 100%;;
+}
+
 .pink {
   color: #EF27A6;
 }
 
 .white,
-.white > * {
+.white * {
   color: #F9F9F9 !important;
 }
 
@@ -313,6 +376,11 @@ button {
   margin-top: 35px;
 }
 
+button:hover {
+  color: #F9F9F9;
+  background-color: #EF27A6;
+}
+
 .image-cta .image-wrapper {
   max-width: 45%;
   margin-right: 50px;
@@ -415,6 +483,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.38px;
   color: #292929;
+  margin: 10px 0 0 0;
 }
 
 .contact .contact-form .checkbox a {
@@ -426,21 +495,45 @@ button {
   text-decoration: underline;
 }
 
-.content-box {
-  padding: 23.5px 48px;
-  width: 100%;
-  border: 2px solid #EF27A6;
-  box-sizing: border-box;
+.contact .contact-form .checkbox input {
+  margin: 0 12px 0 0;
+}
 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.38px;
-  color: #292929;
-  
-  margin-bottom: 80px;
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #292929;
+  border-radius: 0;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
 }
 
 .content-text {
@@ -470,6 +563,9 @@ button {
   justify-content: space-between;
   width: 155px;
 }
+.burger-footer {
+  display: none
+}
 
 .social-icons-wrapper a > svg {
   color: #292929;
@@ -480,6 +576,9 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
+  .burger-footer {
+    display: flex;
+  }
   .black-logo {
     background-image: url("./assets/m_black_logo.png") !important;
   }
