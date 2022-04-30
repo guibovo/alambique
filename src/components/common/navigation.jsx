@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import SocialIcons from "./socialIcons";
 
 const Navigation = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const year = new Date().getFullYear();
 
   const handleToggleMenu = () => {
     setIsOpen(!isOpen);
@@ -74,6 +76,10 @@ const Navigation = () => {
           <Link className={underlineCurrentPage('/publicidad')} to="/publicidad">Publicidad</Link>
           <Link className={underlineCurrentPage('/web-app')} to="/web-app">Web/App</Link>
           <Link className={underlineCurrentPage('/contacto')} to="/contacto">Contacto</Link>
+          <div className="burger-footer">
+            <div className="rights charcoal">@{year} alambique</div>
+            <SocialIcons />
+          </div>
         </div>
       </nav>
     </div>

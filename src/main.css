@@ -9,6 +9,8 @@ body, html, #root {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background: #F9F9F9;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .pink {
@@ -16,8 +18,12 @@ body, html, #root {
 }
 
 .white,
-.white * {
+.white > * {
   color: #F9F9F9 !important;
+}
+
+.charcoal {
+  color: #292929 !important;
 }
 
 .page-content {
@@ -459,6 +465,20 @@ button {
   padding: 0 0 13px 0;
 }
 
+.social-icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 155px;
+}
+
+.social-icons-wrapper a > svg {
+  color: #292929;
+}
+
+.footer .social-icons-wrapper a > svg {
+  color: #F9F9F9;
+}
+
 @media only screen and (max-width: 480px) {
   .black-logo {
     background-image: url("./assets/m_black_logo.png") !important;
@@ -673,6 +693,14 @@ button {
     top: 18px;
     width: 0%;
     left: 50%;
+  }
+  
+  .burger-footer {
+    display: flex;
+    margin: auto 25px;
+    justify-content: space-between;
+    font-size: 13px;
+    align-items: flex-end;
   }
 /* END OF BURGER MENU */
 }

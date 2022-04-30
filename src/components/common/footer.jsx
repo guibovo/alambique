@@ -1,5 +1,7 @@
+import SocialIcons from "./socialIcons";
+
 const Footer = () => {
-  const year = new Date().getFullYear();;
+  const year = new Date().getFullYear();
   
   return (
     <div className="footer">
@@ -7,7 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="logo"></div>
           
-          <div>HERE GOES SOCIAL MEDIAS</div>
+          <SocialIcons />
         </div>
         
         <div className="footer-content">
