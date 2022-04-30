@@ -56,7 +56,7 @@ const Contact = (props) => {
                 <Field id="email" type="email" name="email"  placeholder="Email" />
                 <ErrorMessage name="email" className="errorMsg" component="p" />
                 
-                <Field id="telephone" type="text" name="telephone" placeholder="Teléfono (opcional)" />
+                <Field id="telephone" type="tel" name="telephone" placeholder="Teléfono (opcional)" />
                 <ErrorMessage name="telephone" className="errorMsg" component="p" />
                 
                 <Field id="message" name="message" component="textarea" placeholder="Mensaje" />
