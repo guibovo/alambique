@@ -38,7 +38,7 @@ const Contact = (props) => {
     return(
       <div className="contact">
       <div className="contact-content">
-        <div className="title">{props.title}</div>
+        <div className={`title ${props.titleClasses}`}>{props.title}</div>
         <div className="description">{props.text}</div>
         <div className="impact-text">{props.impactText}</div>
       </div>

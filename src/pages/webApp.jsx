@@ -11,7 +11,7 @@ const WebApp = () => {
         <ImageCta 
           image={webApp}
           title={[`Menos clicks,`, <br/>, `más likes.`]}
-          description={[`La delgada línea entre`, `navegar y surfear.`]}
+          description={[`La delgada línea entre navegar y surfear.`]}
           buttonText="Contacta con nosotros"
         />
         <ContentBox 
@@ -38,20 +38,21 @@ const WebApp = () => {
         <ContentText 
           titleClasses="ml-56"
           textClasses="" 
-          title="Desarollo"
+          title="Desarrollo"
           text={[`Una vez confirmado el diseño y la funcionalidad, desarrollamos la parte interna, conexiones externas, paneles de administración y funciones de tu web o tu app. Utilizamos metodologías de `, <b> desarrollo ágil </b>, `para adaptar la forma de trabajo a las condiciones de cada proyecto.`]}
         />
         
         <ContentText 
           titleClasses="ml-56"
           textClasses="" 
-          title="Mantenimento"
+          title="Mantenimiento"
           text={[`Una vez publicada la web o la aplicación, nos encargamos de que todo siga funcionando correctamente, corregimos los posibles errores, realizamos actualizaciones para continuar reforzando el UX en base al análisis de datos, y realizamos técnicas de posicionamiento SEO para fomentar el `,<b> aumento de visitas.</b>]}
         />
 
       </div>
     
-      <Contact 
+      <Contact
+        titleClasses={"hyphens"}
         title={[`¿Programamos`,<br/>, `una cita?`]}
         text={[`Tu web o app no va a mejorar sola. Por`, <br/>,
         `eso actualizar empieza por `, <b>actúa.</b>]}

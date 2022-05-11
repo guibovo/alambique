@@ -21,7 +21,7 @@ const Content = () => {
             `destilamos briefings en`, <br/>,
             `nuestro alambique y`, <br/>,
             `obtenemos `, <strong> marcas con</strong>, <br/>,
-            <strong>esencia </strong>, <br/>, `propia.`]}
+            <strong>esencia </strong>, `propia.`]}
         />
         <ContentCard titleClasses="ml-20" title="Con b de Bierzo" text={[`Tenemos clientes hasta en`, <br/>,
           `América, pero estamos basados`, <br/>,

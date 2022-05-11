@@ -8,7 +8,7 @@ const Home = () => {
       <Hero />
       <Content />
       <Contact 
-        title={[`No te dejaremos`,<br/>, `en visto.`]}
+        title={[`No te dejaremos`,<br/>, `en `, <i style={{fontWeight: 400}}>visto.</i>]}
         text={[`¿Crees que tu empresa necesita mejorar`,<br/>,
           `su imagen? `,<br/>,
           `¿Necesitas una identidad de marca para`,<br/>,

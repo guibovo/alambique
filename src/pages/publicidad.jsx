@@ -10,8 +10,8 @@ const Publicidad = () => {
       <div className="page-content">
         <ImageCta 
           image={publicidadImage}
-          title={[`Déjate de`, <br/>, `algoritmos.`]}
-          description={[`Los truquitos funcionan,`, <br/>, `si tu contenido `, <b>engancha.</b>]}
+          title={[`Necesitas`, <br/>, `publicidad.`]}
+          description={[`Tranqui, CocaCola, Apple, o`, <br/>, `amazon también.`]}
           buttonText="Contacta con nosotros"
         />
         <ContentBox 
@@ -49,9 +49,9 @@ const Publicidad = () => {
       </div>
     
       <Contact 
-        title={[`No quiero`,<br/>, `parecer spam.`]}
+        title={[`No quiero`,<br/>, `parecer `, <i style={{fontWeight: 400}}>spam.</i>]}
         text={[`Ser creativos a la hora de publicitarse`, <br/>,
-        `es primordial para conseguir resultados.`]}
+        `es primordial para `, <b>conseguir resultados</b>, `.`]}
         impactText="¿Te atreves?"
       />
     </>

@@ -1,7 +1,7 @@
 
 const ContentBox = props => {
   return(
-    <div className="content-box">
+    <div className="content-box" key={props.key}>
       {props.text}
     </div>
   );

@@ -11,7 +11,7 @@ const Branding = () => {
         <ImageCta 
           image={branding}
           title={[`Marcas con`, <br/>, <span className="pink">essencia</span>, `.`]}
-          description={[`No, tu `, <b> logo </b>, `de Canvas `, <br/>, `no te representa`]}
+          description={[`No, tu `, <b> logo </b>, `de Canva `, <br/>, `no te representa.`]}
           buttonText="Contacta con nosotros"
         />
         <ContentBox 
@@ -22,8 +22,7 @@ const Branding = () => {
           titleClasses="ml-56"
           textClasses="" 
           title="Investigación"
-          text={[`Todo empieza con un briefing. Nos reunimos contigo y recogemos todos los datos que nos ayudarán en las fases posteriores. Además estudiamos a tu competencia y buscamos espacios de oportunidad en el sector en el que opera la empresa. Sintetizamos toda la información y empezamos a calentar nuestro alambique.
-          `]}
+          text={[`Todo empieza con un briefing. Nos reunimos contigo y recogemos todos los datos que nos ayudarán en las fases posteriores. Además estudiamos a tu competencia y buscamos `, <b>espacios de oportunidad</b>, ` en el sector en el que opera la empresa. Sintetizamos toda la información y empezamos a calentar nuestro alambique.`]}
         />
         
         <ContentText 
@@ -38,7 +37,7 @@ const Branding = () => {
       </div>
     
       <Contact 
-        title={[`Mi marca no`,<br/>, `mola.`]}
+        title={[`Mi marca no`,<br/>, <i style={{fontWeight: 400}}>mola.</i>]}
         text={[`Si sientes que tu competencia es más `, <br/>,
         `atractiva, necesitas un `, <b>rebranding.</b>, <br/>,
         `Y si estás lanzando una nueva marca,`, <br/>,

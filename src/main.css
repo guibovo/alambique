@@ -89,6 +89,10 @@ body, html, #root {
   color: #292929 !important;
 }
 
+.hyphens {
+  hyphens: auto;
+}
+
 .page-content {
   min-height: calc(100vh - 246px);
   height: 100%;
@@ -184,6 +188,7 @@ body, html, #root {
 
  .footer .links {
   font-size: 13px;
+  min-width: 500px;
   width: 30%;
  }
 
@@ -536,6 +541,12 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
+.content-box {
+  margin-bottom: 80px;
+  border: 2px solid #EF27A6;
+  padding: 23px 48px;
+}
+
 .content-text {
   margin-bottom: 80px;
   max-width: 800px;
@@ -573,6 +584,10 @@ input[type="checkbox"]:checked::before {
 
 .footer .social-icons-wrapper a > svg {
   color: #F9F9F9;
+}
+
+.social-icons-wrapper a:hover svg path {
+  fill: #EF27A6;
 }
 
 @media only screen and (max-width: 480px) {
@@ -670,7 +685,6 @@ input[type="checkbox"]:checked::before {
   .contact .contact-content .description,
   .contact .contact-content .title {
     margin-bottom: 44px;
-    hyphens: auto;
   }
   .contact .contact-form {
     width: 100%;
@@ -686,7 +700,7 @@ input[type="checkbox"]:checked::before {
   }
   .image-cta .image-wrapper {
     max-width: 100%;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
   }
 
   .page-content.small-content {
@@ -703,6 +717,7 @@ input[type="checkbox"]:checked::before {
   .footer-wrapper,
   .footer-content,
   .footer .links {
+    max-width: 100%;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
@@ -802,4 +817,10 @@ input[type="checkbox"]:checked::before {
     align-items: flex-end;
   }
 /* END OF BURGER MENU */
+
+
+.content-box {
+  margin-bottom: 67px;
+  padding: 20px 28px;
+}
 }
