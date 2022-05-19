@@ -44,7 +44,7 @@ const SocialMedia = () => {
       </div>
     
       <Contact 
-        title={[`Quiero `, <i style={{fontWeight: 400}}>petarlo</i>,<br/>, `en las redes.`]}
+        title={[`Quiero `, <i>petarlo</i>,<br/>, `en las redes.`]}
         text={[`Es un largo camino por recorrer, pero`, <br/>,
         `al final no tendrás clientes, tendrás`, <br/>,
         `una `, <b>comunidad.</b>]}

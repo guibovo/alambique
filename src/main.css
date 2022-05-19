@@ -245,7 +245,7 @@ button {
 .home-hero .sub-text {
   font-family: 'Poppins';
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.38px;
@@ -325,7 +325,7 @@ button {
 .home-content-card > .text {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.38px;
@@ -361,7 +361,7 @@ button {
 .image-cta .description {
   font-family: 'Poppins';
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.38px;
@@ -384,6 +384,7 @@ button {
 button:hover {
   color: #F9F9F9;
   background-color: #EF27A6;
+  border: transparent;
 }
 
 .image-cta .image-wrapper {
@@ -429,7 +430,7 @@ button:hover {
 .contact .contact-content .description {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.38px;
@@ -440,7 +441,7 @@ button:hover {
 .contact .contact-content .impact-text {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.38px;
@@ -483,7 +484,7 @@ button:hover {
   align-items: center;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.38px;
@@ -587,10 +588,14 @@ input[type="checkbox"]:checked::before {
 }
 
 .social-icons-wrapper a:hover svg path {
-  fill: #EF27A6;
+  fill: #EF27A6 !important;
 }
 
 @media only screen and (max-width: 480px) {
+  .social-icons-wrapper a > svg path {
+    fill: #292929 !important;
+  }
+    
   .burger-footer {
     display: flex;
   }
