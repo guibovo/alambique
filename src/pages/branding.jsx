@@ -22,7 +22,7 @@ const Branding = () => {
           titleClasses="ml-56"
           textClasses="" 
           title="Investigación"
-          text={[`Todo empieza con un briefing. Nos reunimos contigo y recogemos todos los datos que nos ayudarán en las fases posteriores. Además estudiamos a tu competencia y buscamos `, <b>espacios de oportunidad</b>, ` en el sector en el que opera la empresa. Sintetizamos toda la información y empezamos a calentar nuestro alambique.`]}
+          text={[`Todo empieza con un briefing. Nos reunimos contigo y recogemos todos los datos que nos ayudarán en las fases posteriores. Además estudiamos a tu competencia y buscamos `, <b>espacios de oportunidad</b>, ` en el sector en el que opera la empresa. Sintetizamos toda la información y empezamos a calentar nuestro alambique.`]} 
         />
         
         <ContentText 
