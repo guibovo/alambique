@@ -10,7 +10,6 @@ import SocialMedia from "./pages/socialMedia";
 import Branding from "./pages/branding";
 import WebApp from "./pages/webApp";
 import Publicidad from "./pages/publicidad";
-import NotFound from "./pages/notFound";
 import Contact from "./pages/contact";
 import './fonts/Poppins.ttf';
 import './main.css';
@@ -29,7 +28,6 @@ const App = () => {
             <Route path="/web-app" element={<WebApp />} />
             <Route path="/publicidad" element={<Publicidad />} />
             <Route path="/contacto" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
           </Routes>
         <Footer />
       </BrowserRouter>
