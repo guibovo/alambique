@@ -1,17 +1,26 @@
 {
   "files": {
-    "main.css": "/alambique/static/css/main.8060f9ff.css",
-    "main.js": "/alambique/static/js/main.00f32885.js",
+    "main.css": "/alambique/static/css/main.da1908d0.css",
+    "main.js": "/alambique/static/js/main.ff93d131.js",
     "static/js/787.fd4fd16f.chunk.js": "/alambique/static/js/787.fd4fd16f.chunk.js",
+    "static/media/web-app.svg": "/alambique/static/media/web-app.ded8e8043e2046841c8f6fc06e23bbaa.svg",
+    "static/media/publicidadImage.svg": "/alambique/static/media/publicidadImage.a6d57770539b37f3e53cda08ee63e50c.svg",
+    "static/media/branding.png": "/alambique/static/media/branding.80fe4ac88fecbb044c0e.png",
     "static/media/dt_home_hero_bg.png": "/alambique/static/media/dt_home_hero_bg.4cfa20cca2aa576445d8.png",
-    "static/media/404.png": "/alambique/static/media/404.d8b02374e69cf106a040.png",
+    "static/media/mb_home_hero_bg.png": "/alambique/static/media/mb_home_hero_bg.368bf2d272bb33acb271.png",
+    "static/media/Poppins.ttf": "/alambique/static/media/Poppins.35d26b781dc5fda684cc.ttf",
+    "static/media/socialMedia.png": "/alambique/static/media/socialMedia.aa9189c0b3eb9dba8b6a.png",
+    "static/media/404.png": "/alambique/static/media/404.83e682c74411043b0b76.png",
+    "static/media/instagram.svg": "/alambique/static/media/instagram.33ccbd75fc4edbfc8086149bb5c7a701.svg",
+    "static/media/whatsapp.svg": "/alambique/static/media/whatsapp.b524fa77cb3041a25183111981dd448f.svg",
+    "static/media/email.svg": "/alambique/static/media/email.553bb4520998cf20a385e967cf197467.svg",
     "index.html": "/alambique/index.html",
-    "main.8060f9ff.css.map": "/alambique/static/css/main.8060f9ff.css.map",
-    "main.00f32885.js.map": "/alambique/static/js/main.00f32885.js.map",
+    "main.da1908d0.css.map": "/alambique/static/css/main.da1908d0.css.map",
+    "main.ff93d131.js.map": "/alambique/static/js/main.ff93d131.js.map",
     "787.fd4fd16f.chunk.js.map": "/alambique/static/js/787.fd4fd16f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8060f9ff.css",
-    "static/js/main.00f32885.js"
+    "static/css/main.da1908d0.css",
+    "static/js/main.ff93d131.js"
   ]
 }
