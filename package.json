@@ -2,7 +2,7 @@
   "name": "alambique",
   "version": "0.1.1",
   "private": true,
-  "homepage": "https://guibovo.github.io/alambique/",
+  "homepage": "https://guibovo.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@formspree/react": "^2.2.4",
