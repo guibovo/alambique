@@ -13,7 +13,7 @@ const Navigation = () => {
   
   useEffect(() => {
     const pathName= location.pathname;
-    const ishomeScreen = (pathName === '/' || pathName === '/alambique'  || pathName === '/alambique/');
+    const ishomeScreen = (pathName === '/');
 
     let element = document.getElementById("headerNavigation");
     let logoElement = document.getElementById("headerLogo");
@@ -56,12 +56,12 @@ const Navigation = () => {
     return '';
   }
   
-  const isHomeScreen = path => (path === '/' || path === '/alambique'  || path === '/alambique/');
+  const isHomeScreen = path => (path === '/');
 
   return(
     <div className="navigation-wrapper">
       <nav id="headerNavigation" className="navigation">
-        <Link id="headerLogo" to="/alambique" className="logo">
+        <Link id="headerLogo" to="/" className="logo">
         </Link>
         <div id="burger-menu" className={`${isOpen ? "open" : ""} ${isHomeScreen(location.pathname) ? '' : 'black-burger'}`} onClick={() => handleToggleMenu()}>
           <span></span>
@@ -70,7 +70,7 @@ const Navigation = () => {
           <span></span>
         </div>
         <div id="navigation-links" className={`links ${isOpen ? "open" : ""}`}>
-          <Link className={underlineCurrentPage('/alambique')} to="/alambique">Home</Link>
+          <Link className={underlineCurrentPage('/')} to="/">Home</Link>
           <Link className={underlineCurrentPage('/branding')} to="/branding">Branding</Link>
           <Link className={underlineCurrentPage('/social-media')} to="/social-media">Social Media</Link>
           <Link className={underlineCurrentPage('/publicidad')} to="/publicidad">Publicidad</Link>

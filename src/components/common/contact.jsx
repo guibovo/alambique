@@ -21,10 +21,12 @@ const Contact = (props) => {
     const handleOnSubmit = (values, actions) => {
       axios({
         method: "POST",
-        url: "https://formspree.io/mjvlpadl",
+        url: "https://formspree.io/f/xknyyvyo",
         data: values
       })
         .then(response => {
+          alert(response)
+          console.log(response)
           actions.setSubmitting(false);
           actions.resetForm();
           handleServerResponse(true, "Mensaje enviado con éxito.");

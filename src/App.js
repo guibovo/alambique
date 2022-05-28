@@ -23,7 +23,6 @@ const App = () => {
         <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/" element={<Home />} />
             <Route path="/social-media" element={<SocialMedia />} />
             <Route path="/branding" element={<Branding />} />
             <Route path="/web-app" element={<WebApp />} />
