@@ -25,8 +25,6 @@ const Contact = (props) => {
         data: values
       })
         .then(response => {
-          alert(response)
-          console.log(response)
           actions.setSubmitting(false);
           actions.resetForm();
           handleServerResponse(true, "Mensaje enviado con éxito.");
