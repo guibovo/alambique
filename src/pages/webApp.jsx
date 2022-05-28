@@ -54,8 +54,7 @@ const WebApp = () => {
       <Contact
         titleClasses={"hyphens"}
         title={[`¿Programamos `,<br/>, `una cita?`]}
-        text={[`Tu web o app no va a mejorar sola. Por`, <br/>,
-        `eso actualizar empieza por `, <b>actúa.</b>]}
+        text={[`Tu web o app no va a mejorar sola. Por eso actualizar empieza por `, <b>actúa.</b>]}
         impactText="¿Empezamos?"
       />
     </>
