@@ -36,56 +36,56 @@ const Contact = (props) => {
     };
     
     return(
-      <div className="contact">
-      <div className="contact-content">
-        <div lang="en" className={`title ${props.titleClasses}`}>{props.title}</div>
-        <div className="description">{props.text}</div>
-        <div className="impact-text">{props.impactText}</div>
-      </div>
+      <div className="contact" id="contacto">
+        <div className="contact-content">
+          <div lang="en" className={`title ${props.titleClasses}`}>{props.title}</div>
+          <div className="description">{props.text}</div>
+          <div className="impact-text">{props.impactText}</div>
+        </div>
 
-      <Formik
-            initialValues={{ name: "", telephone: "", email: "", message: "", terms: false }}
-            onSubmit={handleOnSubmit}
-            validationSchema={formSchema}
-          >
-            {({ isSubmitting }) => (
-              <Form className="contact-form" id="fs-frm" noValidate>
-                <Field id="name" type="text" name="name" placeholder="Nombre" />
-                <ErrorMessage name="name" className="errorMsg" component="p" />
-                
-                <Field id="email" type="email" name="email"  placeholder="Email" />
-                <ErrorMessage name="email" className="errorMsg" component="p" />
-                
-                <Field id="telephone" type="tel" name="telephone" placeholder="Teléfono (opcional)" />
-                <ErrorMessage name="telephone" className="errorMsg" component="p" />
-                
-                <Field id="message" name="message" component="textarea" placeholder="Mensaje" />
-                <ErrorMessage name="message" className="errorMsg" component="p" />
-                
-                
-                <label className="checkbox">
-                  <Field type="checkbox" name="terms" />
-                  Acepto la <div>&nbsp;</div> <a href="#"> política de privacidad.</a>
-                </label>
-                <ErrorMessage name="terms" className="errorMsg" component="p" />
-                
-                <button className="full-width" type="submit" disabled={isSubmitting}>
-                  Escríbenos
-                </button>
-                
-                {serverState && (
-                  <div className={`formMessage ${!serverState.ok ? "errorMsg" : "successMsg"}`}>
-                      <div className="box">
-                        <div className="box-symbol"></div>
+        <Formik
+              initialValues={{ name: "", telephone: "", email: "", message: "", terms: false }}
+              onSubmit={handleOnSubmit}
+              validationSchema={formSchema}
+            >
+              {({ isSubmitting }) => (
+                <Form className="contact-form" id="fs-frm" noValidate>
+                  <Field id="name" type="text" name="name" placeholder="Nombre" />
+                  <ErrorMessage name="name" className="errorMsg" component="p" />
+                  
+                  <Field id="email" type="email" name="email"  placeholder="Email" />
+                  <ErrorMessage name="email" className="errorMsg" component="p" />
+                  
+                  <Field id="telephone" type="tel" name="telephone" placeholder="Teléfono (opcional)" />
+                  <ErrorMessage name="telephone" className="errorMsg" component="p" />
+                  
+                  <Field id="message" name="message" component="textarea" placeholder="Mensaje" />
+                  <ErrorMessage name="message" className="errorMsg" component="p" />
+                  
+                  
+                  <label className="checkbox">
+                    <Field type="checkbox" name="terms" />
+                    Acepto la <div>&nbsp;</div> <a href="#"> política de privacidad.</a>
+                  </label>
+                  <ErrorMessage name="terms" className="errorMsg" component="p" />
+                  
+                  <button className="full-width" type="submit" disabled={isSubmitting}>
+                    Escríbenos
+                  </button>
+                  
+                  {serverState && (
+                    <div className={`formMessage ${!serverState.ok ? "errorMsg" : "successMsg"}`}>
+                        <div className="box">
+                          <div className="box-symbol"></div>
+                        </div>
+                      
+                      <div className={!serverState.ok ? "errorMsg" : "successMsg"}>
+                        {serverState.msg}
                       </div>
-                    
-                    <div className={!serverState.ok ? "errorMsg" : "successMsg"}>
-                      {serverState.msg}
                     </div>
-                  </div>
-                )}
-              </Form>
-            )}
+                  )}
+                </Form>
+              )}
           </Formik>
     </div>
     );

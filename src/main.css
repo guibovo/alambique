@@ -11,6 +11,8 @@ body, html, #root {
     background: #F9F9F9;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 .formMessage {

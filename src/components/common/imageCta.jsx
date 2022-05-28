@@ -5,7 +5,9 @@ const ImageCta = props => {
       <div id="image-cta-copy" className="copy">
         <div className="title">{props.title}</div>
         <div className="description">{props.description}</div>
-        <button> {props.buttonText} </button>
+        <a href="#contacto">
+          <button> {props.buttonText} </button>
+        </a>
       </div>
     </div>
   );
