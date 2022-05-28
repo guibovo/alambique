@@ -90,6 +90,9 @@ body, html, #root {
 }
 
 .hyphens {
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto;
 }
 
