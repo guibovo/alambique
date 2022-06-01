@@ -20,6 +20,12 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+
+      <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="741609fa-f47a-4c78-ab2b-1af110c0f094" ></script>
+      <script type="text/javascript">
+      function OptanonWrapper() { }
+      </script>
+
         <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
