@@ -602,6 +602,12 @@ input[type="checkbox"]:checked::before {
 
 #onetrust-button-group > button {
   background-color: #EF27A6 !important;
+  border: 0px transparent !important;
+  color: #F9F9F9F9 !important;
+}
+
+#onetrust-policy-text {
+  color: #EF27A6 !important;
 }
 
 @media only screen and (max-width: 480px) {
