@@ -7,7 +7,7 @@ import {ReactComponent as WhatsApp} from "../../assets/whatsapp.svg"
 const SocialIcons = props => {
   return (
     <div className="social-icons-wrapper">
-      <a href="https://www.instagram.com/alambique.marketing/">
+      <a href="https://www.instagram.com/alambique.marketing/" target="blank">
         <Instagram />
       </a>
       <a href="tel:+34600590475">

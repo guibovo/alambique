@@ -633,6 +633,10 @@ input[type="checkbox"]:checked::before {
   /* .social-icons-wrapper a > svg path {
     fill: #292929 !important;
   } */
+  
+  .legal-text {
+    padding-top: 80px;
+  }
     
   .burger-footer {
     display: flex;

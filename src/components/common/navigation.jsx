@@ -36,7 +36,7 @@ const Navigation = () => {
     }
     
     window.onscroll = (e) => {
-      if (document.documentElement.scrollTop > 88) {
+      if (document.documentElement.scrollTop > 1) {
         element.classList.add("scroll-navigation");
       } else {
           element.classList.remove("scroll-navigation");

@@ -65,7 +65,7 @@ const Contact = (props) => {
                   
                   <label className="checkbox">
                     <Field type="checkbox" name="terms" />
-                    Acepto la <div>&nbsp;</div> <a href="/politica-de-privacidad"> política de privacidad.</a>
+                    Acepto la <div>&nbsp;</div> <a href="/politica-de-privacidad" target="blank"> política de privacidad.</a>
                   </label>
                   <ErrorMessage name="terms" className="errorMsg" component="p" />
                   
