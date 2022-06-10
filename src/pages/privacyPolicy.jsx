@@ -10,7 +10,12 @@ const PrivacyPoliccy = props => {
 
       <p>Identidad del Responsable</p>
 
-      <p>Responsable: Jorge Corti López NIF: 71522983K Domicilio: Fuentesnuevas, León - España. Correo electrónico: info@alambique.marketing Sitio Web: https://alambique.marketing/</p>
+      <p>
+        Responsable: Jorge Corti López <br/>
+        NIF: 71522983K Domicilio: Fuentesnuevas, León - España. <br/>
+        Correo electrónico: info@alambique.marketing <br/>
+        Sitio Web: https://alambique.marketing/
+      </p>
 
       <p> Principios aplicados en el tratamiento de datos</p>
 

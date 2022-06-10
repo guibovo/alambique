@@ -8,7 +8,12 @@ const LegalWarning = props => {
 
       <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, el Titular expone sus datos identificativos:</p>
 
-      <p>Titular: Jorge Corti López NIF: 71522983K Domicilio: Fuentesnuevas, León - España. Correo electrónico: info@alambique.marketing Sitio Web: https://alambique.marketing</p>
+      <p>
+        Titular: Jorge Corti López<br/> 
+        NIF: 71522983K Domicilio: Fuentesnuevas, León - España. <br/>
+        Correo electrónico: info@alambique.marketing <br/>
+        Sitio Web: https://alambique.marketing
+      </p>
 
       <p>Finalidad</p>
 
