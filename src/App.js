@@ -14,7 +14,9 @@ import NotFound from "./pages/fourZeroFour";
 import Contact from "./pages/contact";
 import './fonts/Poppins.ttf';
 import './main.css';
-
+import PrivacyPoliccy from "./pages/privacyPolicy";
+import LegalWarning from "./pages/legalWarning";
+import CookiesText from "./pages/cookiesText";
 
 const App = () => {
   return (
@@ -29,6 +31,9 @@ const App = () => {
             <Route path="/publicidad" element={<Publicidad />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/politica-de-privacidad" element={<PrivacyPoliccy/>}/>
+            <Route path="/aviso-legal" element={<LegalWarning/>}/>
+            <Route path="/cookies" element={<CookiesText/>}/>
           </Routes>
         <Footer />
       </BrowserRouter>

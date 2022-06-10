@@ -117,6 +117,21 @@ body, html, #root {
   margin: auto;
 }
 
+.legal-text {
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.legal-text .header {
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .navigation-wrapper {
   position: fixed;
   top: 0;
