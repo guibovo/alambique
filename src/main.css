@@ -615,9 +615,9 @@ input[type="checkbox"]:checked::before {
 }
 
 @media only screen and (max-width: 480px) {
-  .social-icons-wrapper a > svg path {
+  /* .social-icons-wrapper a > svg path {
     fill: #292929 !important;
-  }
+  } */
     
   .burger-footer {
     display: flex;
