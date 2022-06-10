@@ -7,13 +7,13 @@ import {ReactComponent as WhatsApp} from "../../assets/whatsapp.svg"
 const SocialIcons = props => {
   return (
     <div className="social-icons-wrapper">
-      <a href="#">
+      <a href="https://www.instagram.com/alambique.marketing/">
         <Instagram />
       </a>
-      <a href="#">
+      <a href="tel:+34600590475">
         <WhatsApp />
       </a>
-      <a href="#">
+      <a href="mailto:mailto:Info@alambique.marketing">
         <Email />
       </a>
     </div>

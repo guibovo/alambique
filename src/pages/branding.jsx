@@ -10,7 +10,7 @@ const Branding = () => {
       <div className="page-content">
         <ImageCta 
           image={branding}
-          title={[`Marcas con`, <br/>, <span className="pink">esencia</span>, `.`]}
+          title={[<span className="pink">Rompe</span>, <br/>, `el molde`, `.`]}
           description={[`No, tu `, <b> logo </b>, `de Canva `, <br/>, `no te representa.`]}
           buttonText="Contacta con nosotros"
         />
